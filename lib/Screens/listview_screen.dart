@@ -15,8 +15,6 @@ class ListViewScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Opciones'),
-        centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 149, 10, 0),
       ),
       body: ListView(
         children: [

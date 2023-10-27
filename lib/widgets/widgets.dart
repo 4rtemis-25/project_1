@@ -1,0 +1,1 @@
+export 'package:project_1/widgets/custom_card_1.dart';
