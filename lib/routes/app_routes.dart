@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_1/Screens/screens.dart';
+import 'package:project_1/Screens/sliders.dart';
 import 'package:project_1/models/menu_option.dart';
 
 class AppRoutes {
@@ -14,6 +15,7 @@ class AppRoutes {
     MenuOption(route: 'avatar', name: 'Avatar', screen: const AvatarScreen(), icon: Icons.supervised_user_circle_outlined),
     MenuOption(route: 'animate', name: 'Animaciones', screen: const AnimatedScreen(), icon: Icons.supervised_user_circle_outlined),
     MenuOption(route: 'inputs', name: 'Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
+    MenuOption(route: 'sliders', name: 'Sliders', screen: const SlidersScreen(), icon: Icons.slideshow),
   ];
 
   static Map<String, Widget Function (BuildContext)> getAppRoutes() {
