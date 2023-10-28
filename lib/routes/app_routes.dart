@@ -7,12 +7,13 @@ class AppRoutes {
 
   static final menuOptions = <MenuOption>[
     // MenuOption(route: 'home', name: 'HomeScreen', screen: const HomeScreen(), icon: Icons.home),
-    MenuOption(route: 'listview', name: 'ListViewScreen', screen: const ListViewScreen(), icon: Icons.list),
-    MenuOption(route: 'listview2', name: 'ListViewScreen2', screen: const ListViewScreen2(), icon: Icons.list_alt),
-    MenuOption(route: 'alert', name: 'AlertScreen', screen: const AlertScreen(), icon: Icons.notification_important),
-    MenuOption(route: 'card', name: 'CardScreen', screen: const CardScreen(), icon: Icons.credit_score),
-    MenuOption(route: 'avatar', name: 'AvatarScreen', screen: const AvatarScreen(), icon: Icons.supervised_user_circle_outlined),
-    MenuOption(route: 'animate', name: 'AnimatedScreen', screen: const AnimatedScreen(), icon: Icons.supervised_user_circle_outlined),
+    MenuOption(route: 'listview', name: 'ListView', screen: const ListViewScreen(), icon: Icons.list),
+    MenuOption(route: 'listview2', name: 'ListView2', screen: const ListViewScreen2(), icon: Icons.list_alt),
+    MenuOption(route: 'alert', name: 'Alerta', screen: const AlertScreen(), icon: Icons.notification_important),
+    MenuOption(route: 'card', name: 'Card', screen: const CardScreen(), icon: Icons.credit_score),
+    MenuOption(route: 'avatar', name: 'Avatar', screen: const AvatarScreen(), icon: Icons.supervised_user_circle_outlined),
+    MenuOption(route: 'animate', name: 'Animaciones', screen: const AnimatedScreen(), icon: Icons.supervised_user_circle_outlined),
+    MenuOption(route: 'inputs', name: 'Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
   ];
 
   static Map<String, Widget Function (BuildContext)> getAppRoutes() {
