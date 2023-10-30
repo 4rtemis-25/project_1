@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_1/Screens/listview_builder.dart';
 import 'package:project_1/Screens/screens.dart';
 import 'package:project_1/Screens/sliders.dart';
 import 'package:project_1/models/menu_option.dart';
@@ -16,6 +17,7 @@ class AppRoutes {
     MenuOption(route: 'animate', name: 'Animaciones', screen: const AnimatedScreen(), icon: Icons.supervised_user_circle_outlined),
     MenuOption(route: 'inputs', name: 'Inputs', screen: const InputsScreen(), icon: Icons.input_rounded),
     MenuOption(route: 'sliders', name: 'Sliders', screen: const SlidersScreen(), icon: Icons.slideshow),
+    MenuOption(route: 'infinite', name: 'Infinite Scroll', screen: const ListViewBuilderScreen(), icon: Icons.image_outlined),
   ];
 
   static Map<String, Widget Function (BuildContext)> getAppRoutes() {
