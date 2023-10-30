@@ -15,24 +15,35 @@ class AppTheme {
 
       // TEXTBUTTON THEME
       textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom( foregroundColor: primary )
-      ),
+          style: TextButton.styleFrom(foregroundColor: primary)),
 
       //FLOATING ACTION BUTTON
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
-        backgroundColor: primary,
-        elevation: 5
-      ),
+          backgroundColor: primary, elevation: 5),
 
       // ELEVATED BUTTONS
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppTheme.primary,
-          shape: const StadiumBorder(),
-          elevation: 0        )
-      )
-    );
+            backgroundColor: AppTheme.primary,
+            shape: const StadiumBorder(),
+            elevation: 0),
+      ),
+      inputDecorationTheme: const InputDecorationTheme(
+        floatingLabelStyle: TextStyle(color: primary),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primary),
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(10), topRight: Radius.circular(10)),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primary),
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(10), topRight: Radius.circular(10)),
+        ),
 
-
-       
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.only( bottomLeft: Radius.circular(10), topRight: Radius.circular(10)
+        ),
+        )
+      ));
 }
